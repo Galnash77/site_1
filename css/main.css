@@ -1,0 +1,600 @@
+/* Общие стили */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+
+body {
+    background: #fff;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 250px;
+}
+
+/* Секция "header" */
+.header {
+    color: #FFF;
+    width: 100%;
+    height: 768px;
+    background-image: url(/img/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-content {
+    position: relative;
+}
+
+.header-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 5.71px;
+    margin: 0;
+}
+
+.header-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    margin: -10px;
+}
+
+.scroll-text {
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 4px;
+    position: absolute;
+    bottom: 30px;
+    top: 330px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Секция "navbar" */
+.navbar {
+    height: 65px;
+}
+
+.navbar .container {
+    height: 65px;
+}
+
+.navbar::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #E6E6E6;
+    display: block;
+}
+
+.navbar .active {
+    color: #00A4E5;
+}
+
+.navbar-logo {
+    width: 79px;
+    height: 18px;
+    margin: 25px 0;
+}
+
+.navbar nav {
+    float: right;
+    width: 50%;
+    height: 65px;
+}
+
+.navbar nav ul {
+    height: 16px;
+    margin: 25px 0;
+    padding-left: 60px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar nav ul li {
+    display: inline-block;
+}
+
+.navbar nav ul li a {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: auto;
+    letter-spacing: 1px;
+    color: #48555B;
+    text-decoration: double;
+}
+
+
+/* Секция "OUR STORY" */
+.story {
+    margin-top: 58px;
+}
+
+.story_title-2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #48555B;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.story_title-2::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.story_inner {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.story_left {
+    max-width: 405px;
+    margin-right: 50px;
+}
+
+
+.story_title-3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #48555B;
+}
+
+.accent-color {
+    color: #00A4E5;
+}
+
+.story_text {
+    max-height: 115px;
+    font-size: 13px;
+    line-height: 23px;
+    color: #48555B;
+}
+
+.story_right {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.story_item {
+    font-weight: 800;
+    font-size: 24px;
+    padding: 15px;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 140px;
+    height: 224px;
+    margin-right: 20px;
+}
+
+.story_item:nth-child(1) {
+    background-image: url(/img/we_plan.png);
+}
+
+.story_item:nth-child(2) {
+    background-image: url(/img/we_manage.png);
+}
+
+.story_item:nth-child(3) {
+    background-image: url(/img/we_build.png);
+    margin-right: 0px;
+}
+
+/* Секция "OUR CARABILITIES" */
+.services {
+    margin: 117px 0;
+}
+
+.services_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.services_title {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2.3px;
+    color: #48555B;
+}
+
+.services_title::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    margin-top: 10px;
+    background-color: #00A4E5;
+    display: block;
+}
+
+.services_text {
+    font-weight: 400;
+    font-size: 11px;
+    color: #48555B;
+    margin-left: 100px;
+}
+
+.btn {
+    display: inline-block;
+    max-width: 150px;
+    height: 40px;
+    background-color: #00A4E5;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 5px;
+    padding: 11px 29px;
+}
+
+.services_cards {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.card {
+    flex: 1;
+    width: 295px;
+    height: 330px;
+    padding: 38px 23px 39px 22px;
+    border: 1px solid #E6E6E6;
+}
+
+.service_img {
+    margin-bottom: 10px;
+}
+
+.service_title {
+    color: #48555B;
+    font-weight: 700;
+    font-size: 15px;
+    height: 48px;
+    line-height: 24px;
+    letter-spacing: 0.43px;
+    margin-bottom: 0;
+}
+
+.service_text {
+    color: #48555B;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.19px;
+}
+
+/* Секция "GET IN TOUCH" */
+
+.get-in-touch {
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/get-in-touch.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.get-content {
+    width: 350px;
+    height: 150px;
+    margin-top: 120px;
+}
+
+.get_title {
+    align-items: flex-start;
+    color: #48555B;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+
+.get_btn {
+    display: inline-block;
+    max-width: 150px;
+    height: 40px;
+    background-color: #00A4E5;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 30px;
+    padding: 11px 26px;
+}
+
+/* Секция "Newsletter Signup" */
+
+.newsletter {
+    width: 100%;
+    height: 100px;
+    background-color: #171819;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-content {
+    width: 685px;
+    height: 40px;
+}
+
+.newsletter-content form {
+    display: flex;
+    max-height: 40px;
+    margin: 0;
+}
+
+.news-title {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.85px;
+    white-space: nowrap;
+}
+
+#email {
+    width: 250px;
+    height: 40px;
+    margin-left: 70px;
+    border: 1px solid #979797;
+    padding-left: 16px;
+}
+
+.news-btn {
+    max-width: 150px;
+    height: 40px;
+    background-color: #00A4E5;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 11px 48px;
+}
+
+/* Секция "Footer" */
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: #141A20;
+    color: #FFF;
+}
+
+.footer-top {
+    display: flex;
+    padding-top: 42px;
+}
+
+.footer-company {
+    height: 150px;
+    margin-right: 71px;
+}
+
+.footer-company_p1 {
+    width: 59px;
+    font-weight: 200;
+    font-size: 11px;
+    letter-spacing: 0.85px;
+    color: #FFF;
+    margin-bottom: 19px;
+}
+
+.footer-logo {
+    width: 101px;
+    height: 23px;
+    margin-bottom: 15px;
+}
+
+.footer-company_p2 {
+    width: 250px;
+    height: 76px;
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 19px;
+    letter-spacing: 1px;
+    color: #FFF;
+}
+
+.footer-links {
+    width: 262px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 58px;
+}
+
+.footer-links_p1 {
+    width: 34px;
+    font-weight: 200;
+    font-size: 11px;
+    letter-spacing: 0.85px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.footer-links-1 {
+    width: 76px;
+    color: #FFF;
+    margin-right: 34px;
+}
+
+.footer-links-2 {
+    margin-top: 25px;
+    margin-right: 34px;
+}
+
+.footer-links-3 {
+    margin-top: 25px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.85px;
+    color: #FFF;
+    text-decoration: double;
+}
+
+.footer-contact-us {
+    width: 141px;
+    height: 158px;
+    margin-right: 46px;
+}
+
+.footer-contact-us_p1 {
+    width: 75px;
+    font-weight: 200;
+    font-size: 11px;
+    letter-spacing: 0.85px;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.footer-contact-us_p2 {
+    width: 141px;
+    font-weight: 200;
+    font-size: 11px;
+    letter-spacing: 0.85px;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+.footer-contact-us_p3 {
+    width: 141px;
+    font-weight: 200;
+    font-size: 11px;
+    letter-spacing: 0.85px;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+.footer-contact-us_p4 {
+    width: 141px;
+    font-weight: 200;
+    font-size: 11px;
+    letter-spacing: 0.85px;
+    color: #FFF;
+}
+
+.footer-socials {
+    width: 87px;
+    height: 13px;
+    margin-top: 27px;
+}
+
+.icon_facebook {
+    background-color: #FFF;
+    margin-right: 18px;
+}
+
+.icon_twitter {
+    margin-right: 18px;
+}
+
+.footer-bottom {
+    background-color: #171819;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer-copyright {
+    width: 308px;
+    height: 15px;
+    margin-left: 571px;
+}
+
+.footer-copyright p {
+    font-weight: 200;
+    font-size: 11px;
+    letter-spacing: 0.85px;
+}
+
+/* Адаптив */
+
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 0 250px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .story_inner {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .story_right {
+        flex-wrap: wrap;
+    }
+
+    .story_item {
+        margin-bottom: 20px;
+    }
+
+    .story_item:nth-child(3) {
+        margin-right: 0px;
+    }
+}
